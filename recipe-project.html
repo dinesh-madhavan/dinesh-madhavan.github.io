@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App UI/UX</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+    <style>
+       
+        .content-section {
+            margin-bottom: 2em;
+            padding: 20px;
+        }
+        
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section ul li::before {
+            content: '•';
+            
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+       
+    </style>
+</head>
+<body>
+    <header id="breadcrumbs-header">
+        <div id="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Dinesh Madhavan | UX/UI Design
+            Portfolio</a>  <span> / </span>
+          <span aria-current="page">Recipe App</span>
+        </div>
+        <button id="theme-toggle" onclick="toggleDarkMode()">
+            <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24">
+                <!-- Sun Icon -->
+                <g id="sun-icon" style="display: none;">
+                    <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="white" stroke-width="2"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="white" stroke-width="2"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="white" stroke-width="2"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="white" stroke-width="2"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="white" stroke-width="2"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="white" stroke-width="2"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="white" stroke-width="2"/>
+                </g>
+                <!-- Moon Icon -->
+                <g id="moon-icon" style="display: block;">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-1.1-.18-2.17-.5-3.14-.98 1.21-2.5 2.04-4.3 2.04-2.93 0-5.3-2.37-5.3-5.3 0-1.8.83-3.32 2.04-4.3C14.17 2.18 13.1 2 12 2z" fill="none" stroke="black" stroke-width="2"/>
+                </g>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+   
+        <div class="project-header">
+            <img id="recipe-project-icon" src="assets/Recipeinfo/Recipe-icon.png" alt="Recipe-Icon" class="project-icon">
+            <h1>Recipe App </h1>
+            <div class="tag-container">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">User Research</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Heuristic Evaluation</span>
+            </div>
+            <img id="recipe-project-image" src="assets/Recipeinfo/recipe-light.png" alt="Project Image" class="project-image">
+        </div>
+        <hr class="section-divider">
+        <!-- Project Summary -->
+    
+        <div class="content-section">
+            <h2>Summary</h2>
+            <p>As part of the User Interface Design and Usability unit at Monash University, I collaborated with a small team to design a mobile recipe app. Our aim was to help users tackle the challenges of preparing cost-effective and nutritious meals. The project centered on crafting a user-friendly experience, making it possible for even beginners to easily navigate and manage complex culinary information on their mobile devices.</p>
+            <p><strong>Problem</strong></p>
+            <ul>
+                <li>The rising concerns about the cost of living and the need for affordable, wholesome meals.</li>
+            </ul>
+            <p><strong>Challenge</strong></p>
+            <ul>
+                <li>Our goal was to deliver a prototype that enables users to search for recipes based on specific criteria like dietary requirements, cost per serve, or key ingredients.</li>
+            </ul>
+        </div>
+        <hr class="section-divider">
+        <div class="content-section">
+            <h2>User Research</h2>
+            <p>Conducting user research for our cooking application revealed crucial insights into user demographics, behaviors, and preferences. The diverse data collection through Google Forms provided a comprehensive understanding of our potential users and their habits in the culinary domain.</p>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="assets/Recipeinfo/Survey1.png" alt="survey-results1" class="project-image" style="margin-right: 20px;">
+                 <img src="assets/Recipeinfo/Survey2.png" alt="survey-results2" class="project-image">
+            </div>
+            
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/Recipeinfo/Survey3.png" alt="survey-results3" class="project-image" style="margin-right: 20px;">
+            <img src="assets/Recipeinfo/Survey4.png" alt="survey-results4" class="project-image">
+           </div>
+           <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets/Recipeinfo/Survey5.png" alt="survey-results5" class="project-image">
+        </div>
+          
+            <p><strong>Key Findings:</strong></p>
+            <ul>
+                <li>Demographic Diversity:
+                    <ul>
+                        <li>Respondents displayed a nearly equal gender split, with a predominant age group of individuals under 25, highlighting a technological age disparity.</li>
+                        <li>The majority of participants were of Indian origin, with a significant representation from the Information Technology sector.</li>
+                    </ul>
+                </li>
+                <li>Shopping Habits:
+                    <ul>
+                        <li>Despite tech-savvy backgrounds, a substantial number preferred sourcing ingredients from local grocers over online supermarkets.</li>
+                        <li>Budget-consciousness was evident, as most respondents fell within the "less than 40 dollars" category for weekly grocery spending.</li>
+                    </ul>
+                </li>
+                <li>Cooking Patterns:
+                    <ul>
+                        <li>A diverse range of cooking frequencies emerged, with a notable preference for cooking more than eight meals a week.</li>
+                        <li>Time spent on meal preparation varied, with over 75% dedicating 1-2 hours, reflecting a balance between convenience and home-cooked meals.</li>
+                    </ul>
+                </li>
+                <li>Cuisine Preferences:
+                    <ul>
+                        <li>Indian cuisine dominated preferences, followed by Chinese and Italian, showcasing a correlation with the respondents' origin and influence of popular fast-food chains.</li>
+                    </ul>
+                </li>
+                <li>Dietary Restrictions:
+                    <ul>
+                        <li>A significant portion of respondents had no religious restrictions, while Hindu and Halal restrictions were present among others.</li>
+                        <li>Spice tolerance was generally high, aligning with the main demographic of users accustomed to spicier foods.</li>
+                    </ul>
+                </li>
+                <li>Content Consumption:
+                    <ul>
+                        <li>Viewing cooking videos emerged as the preferred format, aligning with contemporary preferences for visual content over traditional methods like blogs or recipe books.</li>
+                    </ul>
+                </li>
+                <li>User Suggestions:
+                    <ul>
+                        <li>Respondents suggested features such as recipe sharing, a blogging section, interactive questionnaires for taste preferences, and a calorie tracker, emphasizing the importance of social and personalized elements in the app.</li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Place User Research Image Here -->
+            <!-- <img src="path-to-your-user-research-image.jpg" alt="User Research Image"> -->
+        </div>
+        
+        <!-- Repeat for other sections -->
+        <!-- MOSCOW Analysis Section -->
+        <!-- Low Fidelity Prototypes Section -->
+        <!-- High Fidelity Prototypes Section -->
+        
+
+
+    
+            <div class="content-section">
+        <h2>Design Process</h2>
+        <p>The design process involved creating user personas, MOSCOW analysis, Storyboards, low-fidelity and high-fidelity prototypes </p>
+       <br> <h2>MOSCOW</h2>  
+        <img src="assets/Recipeinfo/MoSCoW.png" alt="MOSCOW Analysis Image" class="project-image">
+          <br>
+            <hr class="section-divider">
+
+</div>
+<div class="content-section">
+    <h2>Persona</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="assets/Recipeinfo/Persona1.png" max-width="30%"  alt="Persona 1 Image" class="project-image" > <!-- Added margin for spacing -->
+      
+    </div>
+</div>
+
+<div class="content-section">
+    <h2>Story Boards</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <img src="assets/Recipeinfo/Storyboard1.png" alt="Storyboard" class="project-image" style="margin-right: 20px;">
+    <img src="assets/Recipeinfo/Storyboard2.png" alt="Storyboard" class="project-image">
+</div> 
+</div>
+<div class="content-section">
+<h2>Low Fidelity Prototypes</h2>
+
+    
+            <img src="assets/Recipeinfo/Low-fidelity-prototype1.png" alt="Low Fidelity Prototype Image" class="project-image">
+            <img src="assets/Recipeinfo/Low-fidelity-prototype2.png" alt="Low Fidelity Prototype Image2" class="project-image">
+       
+            <hr class="section-divider">
+
+</div>
+
+            <div class="recipe-content-section">
+                <h2>High Fidelity Prototype Images </h2>
+              
+                <br>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Home Screen.jpg" alt="Prototype Image 1">
+                        <p class="caption">Home Screen</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Search Screen.png"alt="Prototype Image 2">
+                        <p class="caption">Search Screen</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Recipe Viewer Screen.jpg" alt="Prototype Image 3">
+                        <p class="caption">Recipe Viewer</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Recipe Viewer Share.png" alt="Prototype Image 4">
+                        <p class="caption">Share Recipe</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Recipe viewer feedback.png" alt="Prototype Image 5">
+                        <p class="caption">Recipe Viewer - Liked</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Recipeinfo/Favourites Screen.jpg" alt="Prototype Image 6">
+                        <p class="caption">Saved Recipes</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-divider">
+            
+        
+        
+        <div class="content-section">
+        
+            <h2>Heuristic Evaluation</h2>
+            <p>We utilized Nielsen's heuristics to evaluate our recipe app prototype, aiming to identify design flaws before user deployment. This involved applying a set of rules to assess the usability of the prototype screens, ensuring they align with recognized usability criteria.</p>
+            <br><p><strong>Instances of Compliance:</strong></p><br>
+            <ul>
+                <li>Clear Navigation Feedback: The bottom navigation bar effectively communicates the current screen status, enhancing user awareness.</li>
+                <li>Icon Consistency: Icons in navigation and recipe viewer screens adhere to real-world conventions, promoting user understanding.</li>
+                <li>Hierarchy Tracking: The bottom bar menus contribute to tracking navigation hierarchy, reducing memory load.</li>
+                <li>Aesthetic Design: The Home screen follows a simple and aesthetic design, balancing visual elements without overwhelming details.</li>
+              
+            </ul><br>
+            <p><strong>Instances of Violation:</strong></p><br>
+            <ul>
+                <li>Lack of Help Section: The absence of a help and documentation section represents a violation, suggesting the need for an easily accessible help icon.</li>
+                <li>Confirmation Alert Missing: The absence of a confirmation alert and undo option for the "like" action is identified as a violation, impacting user control and freedom.</li>
+                <li>Filter Option Absence: The lack of a filter option in search violates flexibility and efficiency principles, hindering users from excluding certain recipe ingredients.</li>
+            </ul><br>
+            <p>While the app demonstrates adherence to several heuristic principles, identified violations, particularly the absence of a search filter, pose usability challenges. These findings emphasize the importance of refining user interface elements for improved user control and efficient information retrieval.</p>
+        </div>
+        <hr class="section-divider">
+        <!-- Conclusion Section -->
+      
+            <div class="content-section">
+                <h2>Conclusion</h2>
+                <p>Throughout this project, my involvement in the Recipe App design and development has been extensive and transformative. Utilizing an array of user research methods, including in-depth interviews, comprehensive surveys, and rigorous usability testing, I was able to gain invaluable insights into the user's needs and preferences.</p>
+                <p>This project involved an iterative design process where initial wireframes were developed and continually refined according to the feedback recieved from our tutors. These low-fidelity protypes evolved into detailed prototypes with a focus on Norman's Design principles, which were meticulously crafted using Figma. This allowed for a dynamic and responsive design which offers an intuitive, engaging, and efficient platform for users to explore and manage recipes.</p>
+
+                
+            </div>        
+        
+    </main>
+    
+
+    <hr class="section-divider">
+
+    
+        <footer>
+            <div class="footer-container">
+                <br>
+                <div class="social-links">
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/dinesh-madhavan/" id="linkedin-icon" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-1.1 0-2 .9-2 2v20c1.1 0 2-.9 2-2h14c1.1 0 2-.9 2-2v-20c0-1.1-.9-2-2-2zm-11 19h-3v-10h3v10zm-1.5-11.5c-1 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5 .7 1.5 1.5-.7 1.5-1.5 1.5zm10.5 11.5h-3v-5.5c0-1.4-.5-2.5-1.6-2.5-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v6h-3s.1-9 0-10h3v1.4c.4-.7 1.1-1.6 2.7-1.6 1.9 0 3.4 1.3 3.4 4.1v6.1h-.1z"/>
+                        </svg>
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href=""id="github-icon" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 0.3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4 0.6 0.1 0.8-0.3 0.8-0.6v-2.1c-3.3 0.7-4-1.6-4-1.6-0.5-1.3-1.3-1.7-1.3-1.7-1.1-0.7 0.1-0.7 0.1-0.7 1.2 0.1 1.8 1.3 1.8 1.3 1.1 1.8 2.8 1.3 3.5 1 0.1-0.8 0.4-1.3 0.7-1.6-2.6-0.3-5.4-1.3-5.4-5.8 0-1.3 0.5-2.4 1.2-3.2-0.1-0.3-0.5-1.5 0.1-3.2 0 0 1-0.3 3.3 1.3 1-0.3 2-0.4 3-0.4s2 0.1 3 0.4c2.3-1.6 3.3-1.3 3.3-1.3 0.6 1.7 0.2 2.9 0.1 3.2 0.8 0.8 1.2 1.9 1.2 3.2 0 4.5-2.8 5.5-5.4 5.8 0.4 0.3 0.8 1 0.8 2v3c0 0.3 0.2 0.7 0.8 0.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p>&copy; 2024 | Dinesh Madhavan - Made in Melbourne</p>
+            </div>
+        </footer>
+        
+    
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
