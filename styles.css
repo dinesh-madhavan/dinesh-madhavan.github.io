@@ -1126,13 +1126,14 @@ header#breadcrumbs-header {
 }
 
 .intro-link {
-    text-decoration: none;
+    text-decoration: underline;
     color: #0077b5; /* LinkedIn blue for links */
     font-weight: bold;
 }
 
 .intro-link:hover {
     text-decoration: underline; /* Underline on hover for better user experience */
+    color:#42ade7
 }
 
 /* Dark theme styles */
@@ -1145,10 +1146,14 @@ header#breadcrumbs-header {
 .dark-mode .intro-section p,
 .dark-mode .intro-link {
     color: #fff; /* Light text for dark background */
+    
 }
 
 .dark-mode .intro-link {
     color: #0077b5; /* Same LinkedIn blue for links in dark mode */
+}
+.dark-mode .intro-link:hover {
+   color:#42ade7
 }
 
 /* Responsive design for smaller screens */
