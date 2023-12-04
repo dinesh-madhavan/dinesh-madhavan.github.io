@@ -1238,3 +1238,56 @@ header#breadcrumbs-header {
     color: #B0B0B0; /* Lighter grey for better visibility in dark mode */
     text-decoration: underline; /* Optional: Adds an underline on hover */
 }
+
+#breadcrumbs-header {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#breadcrumb a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Optional: to remove the underline from the link */
+    color: inherit; /* Optional: to ensure the text color matches the rest of the breadcrumb */
+}
+
+.breadcrumb-img {
+    width: 20px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+     /* To make the image circular */
+    margin-right: 10px; /* Space between the image and the text */
+}
+
+
+
+#breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.content-section a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: underline; 
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.content-section a:hover {
+    color: grey; /* Changes color to grey on hover */
+}
+
+/* Light Mode */
+.content-section {
+    color: black; /* Default text color for light mode */
+}
+
+/* Dark Mode */
+.dark-mode .content-section {
+    color: white; /* Text color for dark mode */
+}
+
+.dark-mode .content-section a:hover {
+    color: lightgrey; /* Hover color for links in dark mode */
+}
+
+
