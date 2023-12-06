@@ -29,13 +29,13 @@ if (body.classList.contains('dark-mode')) {
     if (themeImage) {
         switch (themeImage.id) {
             case 'ibike-project-image':
-                themeImage.src = "assets/ibikeinfo/dark.png";
+                themeImage.src = "assets/ibikeinfo/light.png";
                 break;
             case 'ecotrack-project-image':
-                themeImage.src = "assets/Ecotrackinfo/ecotrack-dark.png";
+                themeImage.src = "assets/Ecotrackinfo/ecotrack-light.png";
                 break;
             case 'recipe-project-image':
-                themeImage.src = "assets/Recipeinfo/recipe-dark.png";
+                themeImage.src = "assets/Recipeinfo/recipe-light.png";
                 break;
         }
     }
@@ -45,13 +45,13 @@ if (body.classList.contains('dark-mode')) {
     if (themeImage) {
         switch (themeImage.id) {
             case 'ibike-project-image':
-                themeImage.src = "assets/ibikeinfo/light.png";
+                themeImage.src = "assets/ibikeinfo/dark.png";
                 break;
             case 'ecotrack-project-image':
-                themeImage.src = "assets/Ecotrackinfo/ecotrack-light.png";
+                themeImage.src = "assets/Ecotrackinfo/ecotrack-dark.png";
                 break;
             case 'recipe-project-image':
-                themeImage.src = "assets/Recipeinfo/recipe-light.png";
+                themeImage.src = "assets/Recipeinfo/recipe-dark.png";
                 break;
         }
     }
