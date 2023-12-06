@@ -18,6 +18,9 @@ function toggleDarkMode() {
     themeImage = document.getElementById('recipe-project-image');
 }
 
+
+
+
 body.classList.toggle('dark-mode');
 
 if (body.classList.contains('dark-mode')) {
