@@ -482,21 +482,8 @@ body.dark-mode .project {
     opacity: 0.8;
 }
 
-#sun-icon {
-    display: block; /* Sun icon is visible by default */
-}
 
-#moon-icon {
-    display: none; /* Moon icon is hidden by default */
-}
 
-body.dark-mode #sun-icon {
-    display: none; /* Sun icon is hidden in dark mode */
-}
-
-body.dark-mode #moon-icon {
-    display: block; /* Moon icon is visible in dark mode */
-}
 
 /* Style for the toggle button itself */
 #theme-toggle {
@@ -525,23 +512,8 @@ header {
     padding: 0;
 }
 
-/* Sun icon */
-#sun-icon {
-    display: none; /* Initially hidden; will be toggled by JavaScript */
-}
 
-/* Moon icon */
-#moon-icon {
-    display: block;
-}
 
-body.dark-mode #sun-icon {
-    display: block;
-}
-
-body.dark-mode #moon-icon {
-    display: none;
-}
 
 /* Rest of your styles... */
 /* Styles for project detail page */

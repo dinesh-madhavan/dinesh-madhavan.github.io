@@ -24,8 +24,8 @@ function toggleDarkMode() {
 body.classList.toggle('dark-mode');
 
 if (body.classList.contains('dark-mode')) {
-    moonIcon.style.display = 'none';
     sunIcon.style.display = 'block';
+    moonIcon.style.display = 'none';
     if (themeImage) {
         switch (themeImage.id) {
             case 'ibike-project-image':
@@ -40,8 +40,8 @@ if (body.classList.contains('dark-mode')) {
         }
     }
 } else {
-    moonIcon.style.display = 'block';
     sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
     if (themeImage) {
         switch (themeImage.id) {
             case 'ibike-project-image':
@@ -58,3 +58,39 @@ if (body.classList.contains('dark-mode')) {
 }
 }
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (!document.body.classList.contains('dark-mode')) {
+        toggleDarkMode();
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
+    // Function to toggle dark mode and save preference
+    window.toggleDarkMode = function() {
+        body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        
+        if (body.classList.contains('dark-mode')) {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        } else {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+    }
+
+    // Apply the saved preference
+    const darkModePreference = localStorage.getItem('darkMode') === 'true';
+    if (darkModePreference) {
+        body.classList.add('dark-mode');
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+    } else {
+        body.classList.remove('dark-mode');
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+    }
+});
