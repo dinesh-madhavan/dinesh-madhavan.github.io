@@ -34,7 +34,7 @@ While this is a personal portfolio, suggestions and feedback are always welcome.
 ## Acknowledgments
 
 - Special thanks to the mentors and colleagues at Monash University for their guidance and support.
-- Appreciation to all open-source contributors whose resources have been instrumental in this project.
+
 
 ## Contact
 
