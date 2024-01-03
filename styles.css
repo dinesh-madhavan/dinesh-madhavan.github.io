@@ -1326,4 +1326,127 @@ header#breadcrumbs-header {
     }
 }
 
+//* Base styles - these apply to all screen sizes */
+
+.content-section {
+    margin: 0 auto;
+    padding: 20px;
+    /* Other base styles */
+}
+
+.content-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .content-section {
+        padding: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-header img, .content-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjusts the flex containers for the survey images */
+    .content-section div[style] {
+        display: block;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    /* Adjusts the header and navigation for smaller screens */
+    #breadcrumbs-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #breadcrumb {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #theme-toggle {
+        margin-bottom: 10px;
+    }
+}
+
+/* You can add more media queries for different screen sizes if needed */
+/* Base styles - these apply to all screen sizes */
+
+.content-section {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center the text for better readability */
+}
+
+.about-container, .certifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image, .certification-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Add some space below images */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .content-section {
+        padding: 10px;
+    }
+
+    .about-container, .certifications-container {
+        flex-direction: column;
+    }
+
+    .about-text, .certifications-container {
+        width: 100%;
+    }
+
+    .about-image, .certification-image {
+        max-width: 80%; /* Reduce image size on smaller screens */
+        height: auto;
+    }
+
+    #breadcrumbs-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #breadcrumb {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #theme-toggle {
+        margin-bottom: 10px;
+    }
+
+    .certification-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout for certificates */
+        gap: 10px;
+    }
+}
+
 /* You can add more media queries for different screen sizes if needed */
