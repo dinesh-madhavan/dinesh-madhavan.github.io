@@ -1449,4 +1449,24 @@ header#breadcrumbs-header {
     }
 }
 
-/* You can add more media queries for different screen sizes if needed */
+
+    /* ... your existing styles ... */
+
+    .about-container {
+        display: flex;
+        align-items: center; /* Aligns items vertically in the center */
+        justify-content: center; /* Centers items horizontally */
+        gap: 20px; /* Adds space between the image and text */
+    }
+
+    .about-image {
+        max-width: 200px; /* Adjusts the size of the image */
+        height: auto;
+        border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    }
+
+    .about-text {
+        flex-grow: 1; /* Allows the text container to take up the remaining space */
+    }
+
+    /* ... any additional styles ... */
