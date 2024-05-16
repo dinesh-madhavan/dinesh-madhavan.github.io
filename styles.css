@@ -1011,9 +1011,7 @@ header#breadcrumbs-header {
   }
   
   /* Theme Icon Styles */
-  #theme-icon {
-    fill: #333;
-  }
+
   
   /* Dark mode styles */
   .dark-mode {
@@ -1029,9 +1027,7 @@ header#breadcrumbs-header {
     color: #fff;
   }
   
-  .dark-mode #theme-icon {
-    fill: #fff;
-  }
+  
   
   /* Other styles (footer, etc.) remain the same */
   
@@ -1369,7 +1365,13 @@ header#breadcrumbs-header {
     #theme-toggle {
         margin-bottom: 10px;
     }
+
+    #theme-icon {
+        cursor: pointer;
+        fill:black;
+    }
+
+
 }
 
-/* You can add more media queries for different screen sizes if needed */
-/* Base styles - these apply to all screen sizes */
+
