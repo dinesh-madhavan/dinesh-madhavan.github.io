@@ -833,6 +833,10 @@ body.dark-mode .section-divider {
 
 .dark-mode #project-image {
     content: url('assets/ibikeinfo/dark.png');
+    content: url( 'assets/Ecotrackinfo/ecotrack-light.png');
+    content: url( 'assets/Recipeinfo/recipe-light.png');
+
+
 }
 
 .dark-mode #project-icon {
