@@ -134,7 +134,25 @@
         <!-- ... -->
 
     </main>
-
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">
+    function initCalendlyWidget(darkMode = false) {
+        Calendly.initBadgeWidget({
+            url: 'https://calendly.com/dinesh-madhavan10/call?hide_event_type_details=1&hide_gdpr_banner=1',
+            text: '📞 Contact Me',
+            color: darkMode ? '#d3d3d3' : '#1a1a1a',
+            textColor: darkMode ? '#000000' : '#ffffff',
+            branding: undefined
+        });
+    }
+    window.onload = function() {
+        const body = document.body;
+        initCalendlyWidget(body.classList.contains('dark-mode'));
+    };
+</script>
+<!-- Calendly badge widget end -->
     <hr class="section-divider">
 
     

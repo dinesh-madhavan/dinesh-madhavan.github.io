@@ -32,7 +32,8 @@ function toggleDarkMode() {
                     themeImage.src = "assets/Recipeinfo/recipe-dark.png";
                     break;
             }
-        }
+        }   
+          initCalendlyWidget(true);  // Update Calendly widget to dark mode
     } else {
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'block';
@@ -49,6 +50,7 @@ function toggleDarkMode() {
                     break;
             }
         }
+        initCalendlyWidget(false); // Update Calendly widget to light mode
     }
 }
 
