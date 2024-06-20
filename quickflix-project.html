@@ -3,33 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Farm Inc. Project - Systems Analysis and Design</title>
+    <title>QuickFlix Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
     <style>
-       
-       /* Existing inline styles */
+      body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
         .content-section {
             margin-bottom: 2em;
             padding: 20px;
         }
+
         .content-section ul {
             list-style: none;
             padding: 0;
         }
+
         .content-section ul li::before {
             content: '•';
             display: inline-block;
             width: 1em;
             margin-left: -1em;
+            color: #333;
+        }
+
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 2em auto; /* Center the horizontal ruler */
+            width: 70%; /* Adjust the width of the horizontal ruler as needed */
+        }
+
+        .project-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .project-header img.project-icon {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .tag-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #FF1D45;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
         }
 
         .carousel-container {
             position: relative;
-            max-width: 100%;
+            max-width: 300px;
             margin: auto;
             overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
         }
 
         .carousel-slide {
@@ -69,29 +119,15 @@
             font-size: 1em;
             color: #333;
         }
-
-        .overlay-icons {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            display: flex;
-            gap: 10px;
-            z-index: 20;
-        }
-
-        .overlay-icons img {
-            width: 30px;
-            height: 30px;
-            opacity: 0.7;
-            cursor: pointer;
-        }
+   
     </style>
 </head>
 <body>
     <header id="breadcrumbs-header">
         <div id="breadcrumb" aria-label="Breadcrumb">
-             <a href="index.html"><img src="assets/Dinesh.jpg" alt="Dinesh Madhavan" class="breadcrumb-img">Dinesh Madhavan | UX/UI Design Portfolio</a>  <span> / </span>
-            <span aria-current="page">&nbsp; Fitness Website</span>
+            <a href="index.html">
+                <img src="assets/Dinesh.jpg" alt="Dinesh Madhavan" class="breadcrumb-img">Dinesh Madhavan | UX/UI Design Portfolio</a>  <span> / </span>
+            <span aria-current="page">&nbsp; QuickFlix </span>
         </div>
         <button id="theme-toggle" onclick="toggleDarkMode()">
             <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24">
@@ -116,152 +152,151 @@
     </header>
 
     <main>
-        <!-- Project Header -->
         <div class="project-header">
-            <!-- Assuming you want to use the same image for the project icon -->
-            <img id="healthfarm-project-icon" src="assets/Healthfarminfo/gymicon.png" alt="healthfarm-Icon" class="project-icon">
-            <h1>Health Farm Inc. - Fitness Website</h1>
+            <img id="quickflix-project-icon" src="assets/QuickFlix/popcorn.png" alt="QuickFlix" class="project-icon">
+            <h1>QuickFlix - Movies App </h1>
             <div class="tag-container">
-                <span class="tag">Systems Analysis</span>
-                <span class="tag">Web Design</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">App Design</span>
+                <span class="tag">Concept</span>
                 <span class="tag">Prototyping</span>
             </div>
-            <!-- Placeholder for project image -->
-            <img id="gym-project-image" src="assets/Healthfarminfo/Healthfarm.png" alt="Project Image" class="project-image">
+            <img id="quickflix-project-image" src="assets/QuickFlix/quickflix-cover.png" alt="Project Image" class="project-image">
         </div>
         <hr class="section-divider">
-        <!-- Content Section: Overview -->
-        <div class="content-section">
-            <h2>Project Overview</h2>
-            <p>As part of the Systems Analysis and Design unit project, I collaborated with a team to develop a comprehensive systems analysis and design specification for Health Farm Inc., a fitness solutions provider with 50 branches across Australia. The goal was to create a robust system to manage their growing volume of business and improve accessibility for members and instructors. The project included requirements elicitation, systems modeling, and the development of a high-fidelity prototype. </p>
-        </div>
         
+        <!-- Project Summary -->
+        <div class="content-section">
+            <h2>Summary</h2>
+            <p>QuickFlix is a mobile application designed to enhance the movie booking experience. It features a sleek and user-friendly interface that allows users to browse movies, view details, book tickets, and manage their profiles with ease.</p>
+        </div>
         <hr class="section-divider">
 
+        <!-- Objective -->
         <div class="content-section">
-            <h2>Objectives</h2>
+            <h2>Objective</h2>
+            <p>The primary objective of the QuickFlix design is to provide an intuitive and seamless movie booking experience for users. The design aims to:</p>
             <ul>
-                <li>Analyzed and documented the requirements for a new system to manage fitness programs, instructor information, and member registration.</li>
-                <li>Developed UML diagrams to model the system's functionality and data.</li>
-                <li>Created a high-fidelity prototype of the user interface for key functionalities.</li>
-                <li>Presented and defended the analysis and design to stakeholders in an interview setting.</li>
+                <li>Simplify the process of finding and booking movie tickets.</li>
+                <li>Offer a visually appealing interface that enhances user engagement.</li>
+                <li>Ensure ease of navigation through a well-structured layout.</li>
+                <li>Provide comprehensive movie details and showtimes to aid user decision-making.</li>
+                <li>Incorporate secure and straightforward payment options for a hassle-free transaction process.</li>
             </ul>
         </div>
         <hr class="section-divider">
 
-        <!-- Content Section: My Role -->
+        <!-- Typography and Colors -->
         <div class="content-section">
-            <h2>Analysis Specification Report</h2>
+            <h2>Typography and Colors</h2>
+            <p><strong>Typography:</strong> The application uses the <em>SF Pro</em> font family, known for its clarity and readability on digital screens. It provides a modern and clean look, ensuring an excellent user experience.</p>
+            <p><strong>Colors Used:</strong></p>
             <ul>
-                <li> Provided an in-depth understanding of Health Farm Inc.'s business problems and proposed solutions, including a detailed description of system functionalities.</li>
-                <li> Documented <strong>functional and non-functional requirements</strong> based on stakeholder interviews and analysis of the case study.</li>
+                <li><strong>Primary Colors:</strong>
+                    <ul>
+                        <li><strong>#FF1D45:</strong> <span style="display:inline-block; width:20px; height:20px; background-color:#FF1D45;"></span> A vibrant red used for primary actions and highlights.</li>
+                        <li><strong>#F8223C:</strong> <span style="display:inline-block; width:20px; height:20px; background-color:#F8223C;"></span> A softer red variant used for buttons and active states.</li>
+                    </ul>
+                </li>
+                <li><strong>Secondary Colors:</strong>
+                    <ul>
+                        <li><strong>#000000:</strong> <span style="display:inline-block; width:20px; height:20px; background-color:#000000;"></span> Black used for primary text and icons.</li>
+                        <li><strong>#637394:</strong> <span style="display:inline-block; width:20px; height:20px; background-color:#637394;"></span> A medium grey used for secondary text and icons.</li>
+                        <li><strong>#000000 (61% opacity):</strong> <span style="display:inline-block; width:20px; height:20px; background-color:rgba(0, 0, 0, 0.61);"></span> A Dark grey used for text hints/labels.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
+        <hr class="section-divider">
+
         <div class="content-section">
-            <h2>UML Diagrams</h2>
+            <h2>Screens</h2>
             <div class="carousel-container">
                 <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
                 <div class="carousel-slide" id="carouselSlide">
-                    <img src="assets/Healthfarminfo/Usecase_Diagram-1.png" alt="use_case_diagram" data-caption="Use Case Diagram">
-                    <img src="assets/Healthfarminfo/Activity_Diagram-2.png" alt="Activity Diagram" data-caption="Activity Diagram">
+                    <img src="assets/QuickFlix/Splash Screen.png" alt="Spash Screen" data-caption="Splash Screen">
+                    <img src="assets/QuickFlix/Sign In.png" alt="Sign In Screen" data-caption="Sign In Screen">
+                    <img src="assets/QuickFlix/Signup.png" alt="Sign Up Screen" data-caption="Sign Up Screen">
+                    <img src="assets/QuickFlix/Signup successfull.png" alt="Sign Up Successful Screen" data-caption="Sign Up Successful Screen">
+                    <img src="assets/QuickFlix/Home Screen.png" alt="Home Screen" data-caption="Home Screen">
+                    <img src="assets/QuickFlix/Home Screen Side Bar Enabled.png" alt="Home Screen with Side Bar Enabled" data-caption="Home Screen with Side Bar Enabled">
+                    <img src="assets/QuickFlix/Movie Details Screen.png" alt="Movie Details Screen" data-caption="Movie Details Screen">
+                    <img src="assets/QuickFlix/Movie Details Screen-1.png" alt="Showtimes Screen" data-caption="Showtimes Screen">
+                    <img src="assets/QuickFlix/Booking Screen.png" alt="Seat Selection Screen" data-caption="Seat Selection Screen">
+                    <img src="assets/QuickFlix/Payment Screen.png" alt="Payment Screen" data-caption="Payment Screen">
+                    <img src="assets/QuickFlix/Booking Confirmed.png" alt="Booking Confirmation Screen" data-caption="Booking Confirmation Screen">
+                    <img src="assets/QuickFlix/Profile Screen.png" alt="Profile Screen" data-caption="Profile Screen">
                 </div>
                 <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
             </div>
-            <div class="carousel-caption" id="carouselCaption">Use Case Diagram</div>
+            <div class="carousel-caption" id="carouselCaption">Splash Screen</div>
         </div>
-<script>
-    let currentIndex = 0;
-
-    function moveSlide(direction) {
-        const slideContainer = document.getElementById('carouselSlide');
-        const totalSlides = slideContainer.children.length;
-        const slideWidth = slideContainer.children[0].clientWidth;
-
-        currentIndex += direction;
-
-        if (currentIndex < 0) {
-            currentIndex = totalSlides - 1;
-        } else if (currentIndex >= totalSlides) {
-            currentIndex = 0;
+    <script>
+        let currentIndex = 0;
+    
+        function moveSlide(direction) {
+            const slideContainer = document.getElementById('carouselSlide');
+            const totalSlides = slideContainer.children.length;
+            const slideWidth = slideContainer.children[0].clientWidth;
+    
+            currentIndex += direction;
+    
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+    
+            slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            updateCaption();
         }
-
-        slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        updateCaption();
-    }
-
-    function updateCaption() {
-        const slideContainer = document.getElementById('carouselSlide');
-        const currentSlide = slideContainer.children[currentIndex];
-        const caption = currentSlide.getAttribute('data-caption');
-        document.getElementById('carouselCaption').textContent = caption;
-    }
-</script>
-
-        <!-- Content Section: Development Process -->
+    
+        function updateCaption() {
+            const slideContainer = document.getElementById('carouselSlide');
+            const currentSlide = slideContainer.children[currentIndex];
+            const caption = currentSlide.getAttribute('data-caption');
+            document.getElementById('carouselCaption').textContent = caption;
+        }
+    </script>
         <hr class="section-divider">
-        <div class="content-section">
-            <h2>Prototype Design</h2>
-            <p>Utilizing tools such as Adobe XD, I crafted an interactive representation of the user interface that emphasized:
 
-                <br><br><strong>User Experience:</strong> I aimed to create a prototype that would not only meet the functional requirements but also provide a seamless and intuitive user experience.
-             <br> <strong> Visual Design: </strong> The prototype was developed with a focus on visual appeal, aligning with Health Farm Inc.'s branding and the aesthetic expectations of their clientele.</p>
-            
-             <!-- Prototype Section -->
-             <div class="content-section">
-                <h2>Prototype</h2>
-                <div style="display: flex; justify-content: center; align-items: center; height: 400px; width: 100%;"> <!-- Set width to 100% and adjusted height -->
-                    <iframe src="https://player.vimeo.com/video/890741111?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width: 100%; height: 100%;" title="EcoTrack Prototype"></iframe> <!-- Set width and height to 100% -->
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-            </div>
-            
-                <hr class="section-divider">
-                <img src="assets/Healthfarminfo/Calendar.png"  alt="High Fidelity Prototype Image5" class="project-image">
-            </div>
-            <hr class="section-divider">
-        </div>
-  
-        <div class="content-section">
-            <h2>Key Learnings</h2>
-            <ul>
-                <li><strong>Functional Analysis Techniques:</strong> Gained expertise in analyzing business problems and specifying functional requirements using UML diagrams.</li>
-                <li><strong>Requirements Communication:</strong> Enhanced skills in communicating complex technical information to non-technical stakeholders through clear documentation and visual models.</li>
-                <li><strong>Prototyping:</strong> Developed proficiency in creating high-fidelity prototypes to validate and refine user interface designs.</li>
-            </ul>
-        </div>
-        <hr class="section-divider">
-        <!-- Content Section: Outcome -->
+        <!-- Conclusion -->
         <div class="content-section">
             <h2>Conclusion</h2>
-            <p>The Health Farm Inc. project was a comprehensive exercise in systems analysis and design, providing valuable experience in using UML techniques and developing functional prototypes. The project not only addressed the immediate needs of Health Farm Inc. but also set a foundation for scalable growth and enhanced user experience. The successful completion of this project demonstrates my capability to handle complex systems development tasks and deliver practical solutions.</p>
+            <p>Key advantages of the QuickFlix design include:</p>
+            <ul>
+                <li><strong>Intuitive Navigation:</strong> The clean and organized layout ensures users can easily navigate through the app and find what they need quickly.</li>
+                <li><strong>Visual Appeal:</strong> The vibrant color scheme and modern typography create an engaging and visually appealing interface.</li>
+                <li><strong>Comprehensive Information:</strong> Users have access to detailed movie information and showtimes, helping them make informed decisions.</li>
+                <li><strong>Effortless Booking:</strong> The streamlined seat selection and payment processes ensure a hassle-free booking experience.</li>
+                <li><strong>Security:</strong> Secure payment options and clear booking confirmation enhance user trust and satisfaction.</li>
+            </ul>
+            <p>Overall, the QuickFlix design effectively combines aesthetics and functionality, providing users with an exceptional movie booking experience.</p>
         </div>
-   
-        <!-- Additional sections for project images or diagrams -->
-        <!-- ... -->
-
     </main>
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">
-    function initCalendlyWidget(darkMode = false) {
-        Calendly.initBadgeWidget({
-            url: 'https://calendly.com/dinesh-madhavan10/call?hide_event_type_details=1&hide_gdpr_banner=1',
-            text: '📞 Contact Me',
-            color: darkMode ? '#d3d3d3' : '#1a1a1a',
-            textColor: darkMode ? '#000000' : '#ffffff',
-            branding: undefined
-        });
-    }
-    window.onload = function() {
-        const body = document.body;
-        initCalendlyWidget(body.classList.contains('dark-mode'));
-    };
-</script>
-<!-- Calendly badge widget end -->
     <hr class="section-divider">
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        function initCalendlyWidget(darkMode = false) {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/dinesh-madhavan10/call?hide_event_type_details=1&hide_gdpr_banner=1',
+                text: '📞 Contact Me',
+                color: darkMode ? '#d3d3d3' : '#1a1a1a',
+                textColor: darkMode ? '#000000' : '#ffffff',
+                branding: undefined
+            });
+        }
+        window.onload = function() {
+            const body = document.body;
+            initCalendlyWidget(body.classList.contains('dark-mode'));
+        };
+    </script>
 
-    
+
+
+    <!-- Calendly badge widget end -->
     <footer>
         <div class="footer-container">
             <br>
