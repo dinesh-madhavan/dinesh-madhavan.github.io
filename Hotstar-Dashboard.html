@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Hotstar Analytics</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://example.com/hotstar-background.jpg'); /* Replace with a Disney+ Hotstar themed background image URL */
+            background-size: cover; /* Ensure the background covers the entire page */
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        h1 {
+            color: white; /* Set title color to white for better contrast */
+            font-size: 28px;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInTitle 2s ease-in-out;
+            z-index: 10;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: calc(100vh - 80px); /* Leave space for the title */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(25, 34, 45, 0.7); /* Dark overlay with slight transparency */
+        }
+
+        iframe {
+            width: 100vw;  /* Full width of the viewport */
+            height: 100%;  /* Adjust height to fit the available space */
+            border: none;
+            animation: scaleUp 1s ease-in-out;
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInTitle {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Disney+ Hotstar Analytics</h1>
+    <iframe title="Hotstar-Dashboard" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNWM2MTYzMjMtMjVlZC00NjY0LTlkNTMtNmM2YmFhNDgxZWI0IiwidCI6ImVhNTA1MzgxLTdjYjEtNDQ4ZC1iZGYzLTRlYTAzMTlhMmQ2ZCJ9" frameborder="0" allowFullScreen="true"></iframe></body>
+</html>
