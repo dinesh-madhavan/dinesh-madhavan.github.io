@@ -1,140 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Dinesh Madhavan | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinesh Madhavan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-   
-        <header id="breadcrumbs-header">
-            <div id="breadcrumb" aria-label="Breadcrumb">
-                
-              <a href="index.html"><img src="assets/Dinesh.jpg" alt="Dinesh Madhavan" class="breadcrumb-img">Dinesh Madhavan | UX/UI Design
-                Portfolio</a>  
-            </div>
-        
-            <button id="theme-toggle" onclick="toggleDarkMode()">
-                <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24">
-                    <!-- Sun Icon -->
-                    <g id="sun-icon" style="display: none;">
-                        <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
-                        <line x1="12" y1="1" x2="12" y2="3" stroke="white" stroke-width="2"/>
-                        <line x1="12" y1="21" x2="12" y2="23" stroke="white" stroke-width="2"/>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="white" stroke-width="2"/>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="white" stroke-width="2"/>
-                        <line x1="1" y1="12" x2="3" y2="12" stroke="white" stroke-width="2"/>
-                        <line x1="21" y1="12" x2="23" y2="12" stroke="white" stroke-width="2"/>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="white" stroke-width="2"/>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="white" stroke-width="2"/>
-                    </g>
-                    <!-- Moon Icon -->
-                    <g id="moon-icon" style="display: block;">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-1.1-.18-2.17-.5-3.14-.98 1.21-2.5 2.04-4.3 2.04-2.93 0-5.3-2.37-5.3-5.3 0-1.8.83-3.32 2.04-4.3C14.17 2.18 13.1 2 12 2z" fill="none" stroke="black" stroke-width="2"/>
-                    </g>
-                </svg>
-            </button>
-        
-    </header>
 
-    <div class="intro-section">
-        <h1>Dinesh Madhavan | Portfolio</h1>
-        <hr class="section-divider">
-      <p>"Hey There 👋!  I'm an Business Analyst & UI/UX Designer who creates meaningful digital solutions"</p> 
-        <div class="intro-links">
-            <a href="https://www.linkedin.com/in/dinesh-madhavan/" class="intro-link" target="_blank">
-                <i class="fab fa-linkedin-in"></i> Let's Connect on Linkedin →
-            </a>
-           
-            <a href="about-me.html" class="intro-link">
-                <i class="fas fa-user"></i> About Me →
-            </a>
-        </div>
+  <header id="breadcrumbs-header">
+    <div id="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">
+        <img src="assets/Dinesh.jpg" alt="Dinesh Madhavan" class="breadcrumb-img">
+        Dinesh Madhavan Portfolio
+      </a>
     </div>
-    
-  <!-- Portfolio Section -->
-<section id="portfolio">
+    <button id="theme-toggle" onclick="toggleDarkMode()">
+      <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24">
+        <g id="sun-icon" style="display: none;">
+          <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+          <line x1="12" y1="1" x2="12" y2="3" stroke="white" stroke-width="2"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="white" stroke-width="2"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="white" stroke-width="2"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="white" stroke-width="2"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="white" stroke-width="2"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="white" stroke-width="2"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="white" stroke-width="2"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="white" stroke-width="2"/>
+        </g>
+        <g id="moon-icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-1.1-.18-2.17-.5-3.14-.98 1.21-2.5 2.04-4.3 2.04-2.93 0-5.3-2.37-5.3-5.3 0-1.8.83-3.32 2.04-4.3C14.17 2.18 13.1 2 12 2z" fill="none" stroke="black" stroke-width="2"/>
+        </g>
+      </svg>
+    </button>
+  </header>
+
+  <div class="intro-section">
+    <h1>Dinesh Madhavan | Portfolio</h1>
+    <hr class="section-divider">
+    <p>"Hey there 👋! I'm a Business Analyst & UI/UX Designer crafting meaningful digital solutions."</p>
+    <div class="intro-links">
+      <a href="https://www.linkedin.com/in/dinesh-madhavan/" class="intro-link" target="_blank">
+        <i class="fab fa-linkedin-in"></i> Connect on LinkedIn →
+      </a>
+      <a href="about-me.html" class="intro-link">
+        <i class="fas fa-user"></i> About Me →
+      </a>
+    </div>
+  </div>
+
+  <section id="portfolio">
     <h2>My Projects</h2>
-    <!-- First Row with three projects -->
     <div class="project-row">
-        <div class="project">
-           <a href="ibike-project.html" target="_parent"><img src="assets/project-image-1.png" alt="iBike Ride App"> </a> 
-            <h3>iBike Ride </h3>
-            <p>Business Analysis | Agile  | UI/UX </p>
-        </div>
-        <div class="project">
-            <a href="Ecotrack-project.html" target="_parent"> <img src="assets/project-image-3.png" alt="Eco Track App"></a>
-             <h3>EcoTrack</h3>
-             <p>Business Analysis | Agile | UI/UX </p>
-         </div>
-       
-        <div class="project">
-            <a href="Healthfarm-project.html" target="_parent"> <img src="assets/project-image-8.png" alt="Healthfarm"></a>
-            <h3>Fitness Website</h3>
-            <p>System Analysis | Web Design | Prototyping</p>
-        </div>
+      <div class="project">
+        <a href="ibike-project.html"><img src="assets/project-image-1.png" alt="iBike Ride App"></a>
+        <h3>iBike Ride</h3>
+        <p>Business Analysis | Agile | UI/UX</p>
+      </div>
+      <div class="project">
+        <a href="Ecotrack-project.html"><img src="assets/project-image-3.png" alt="EcoTrack App"></a>
+        <h3>EcoTrack</h3>
+        <p>Business Analysis | Agile | UI/UX</p>
+      </div>
+      <div class="project">
+        <a href="Healthfarm-project.html"><img src="assets/project-image-8.png" alt="Healthfarm Website"></a>
+        <h3>Fitness Website</h3>
+        <p>Systems Analysis | Web Design | Prototyping</p>
+      </div>
     </div>
-    
-  
-    <!-- Second Row with two new projects -->
-     <div class="project-row">
-             
-            <div class="project">
-                <a href="recipe-project.html" target="_parent"> <img src="assets/project-image-2.png" alt="Recipe App"></a>
-                <h3>Recipe App</h3>
-                <p>UI/UX Design | UX Research | Prototyping</p>
-            </div>
-            <div class="project">
-               <a href="quickflix-project.html" target="_parent"><img src="assets/project-image-6.png" alt="QuickFlix"></a>
-                <h3>QuickFlix</h3>
-                <p>UI/UX Design | App Design  | Concept </p>
-            </div>
-            <div class="project">
-                <a href="rosterflex-project.html" target="_parent"> <img src="assets/project-image-7.png" alt="RosterFlex"></a>
-                <h3>RosterFlex</h3>
-                <p>UI/UX Design | App Design | Concept</p>
-            </div>
-           
-        </div>
+    <div class="project-row">
+      <div class="project">
+        <a href="recipe-project.html"><img src="assets/project-image-2.png" alt="Recipe App"></a>
+        <h3>Recipe App</h3>
+        <p>UI/UX Design | UX Research | Prototyping</p>
+      </div>
+      <div class="project">
+        <a href="quickflix-project.html"><img src="assets/project-image-6.png" alt="QuickFlix"></a>
+        <h3>QuickFlix</h3>
+        <p>UI/UX Design | App Concept</p>
+      </div>
+      <div class="project">
+        <a href="rosterflex-project.html"><img src="assets/project-image-7.png" alt="RosterFlex"></a>
+        <h3>RosterFlex</h3>
+        <p>UI/UX Design | App Concept</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="dashboards">
+    <h2>Power BI Dashboards</h2>
+    <div class="project-row">
+      <div class="project">
+        <a href="Netflix-dashboard.html"><img src="assets/netflix-dashboard.jpeg" alt="Netflix Dashboard"></a>
+        <h3>Netflix Analytics</h3>
+        <p>Power BI | Data Visualization</p>
+      </div>
+      <div class="project">
+        <a href="PrimeVideo-Dashboard.html"><img src="assets/primevideo-dashboard.jpeg" alt="Prime Video Dashboard"></a>
+        <h3>Prime Video Analytics</h3>
+        <p>Power BI | Data Visualization</p>
+      </div>
+      <div class="project">
+        <a href="Hotstar-Dashboard.html"><img src="assets/hotstar-dashboard.jpeg" alt="Hotstar Dashboard"></a>
+        <h3>Disney+ Hotstar Analytics</h3>
+        <p>Power BI | Data Visualization</p>
+      </div>
+    </div>
+  </section>
 
-</section>
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<style>
-    .calendly-badge-content span {
-        display: inline;
-    }
-    @media (max-width: 600px) {
-        .calendly-badge-content span {
-            display: none;
-        }
-    }
-</style>
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">
-    function initCalendlyWidget(darkMode = false) {
-        Calendly.initBadgeWidget({
-            url: 'https://calendly.com/dinesh-madhavan10/call?hide_event_type_details=1&hide_gdpr_banner=1',
-            text: '📞 Contact Me',
-            color: darkMode ? '#d3d3d3' : '#1a1a1a',
-            textColor: darkMode ? '#000000' : '#ffffff',
-            branding: undefined
-        });
-    }
-    window.onload = function() {
-        const body = document.body;
-        initCalendlyWidget(body.classList.contains('dark-mode'));
-    };
-</script>
-<!-- Calendly badge widget end -->
-<hr class="section-divider">
+  <section id="extensions">
+    <h2>Browser Extension</h2>
+    <div class="project-row">
+      <div class="project">
+        <a href="drop2fill.html"><img src="assets/Drop2Fill.png" alt="Drop2Fill Extension"></a>
+        <h3>Drop2Fill</h3>
+        <p>Chrome Extension | JavaScript | UX</p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <hr class="section-divider">
     
         <footer>
             <div class="footer-container">
@@ -202,4 +192,5 @@
     
 </body>
 </html>
+
 

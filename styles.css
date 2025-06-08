@@ -769,6 +769,7 @@ body.dark-mode .section-divider {
     width: 50px; /* Adjust as needed */
     height: auto;
     margin-bottom: 20px;
+    
 }
 
 .project-header h1 {
@@ -977,6 +978,13 @@ header {
         height: auto; /* Maintains the aspect ratio of the images */
         margin-bottom: 20px; /* Adds space below each image */
     }
+    body.ibike-page.dark-mode #project-icon {
+        content: url('assets/ibikeinfo/dark-icon.png');
+      }
+
+      body.drop2fill-page.dark-mode #project-icon {
+        content: url('assets/drop2fillinfo/drop2fill-icon.png');
+      }
     
  /* Header Styles */
 header#breadcrumbs-header {
