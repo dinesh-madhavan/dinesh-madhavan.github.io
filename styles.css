@@ -839,10 +839,12 @@ body.dark-mode .section-divider {
 
 
 }
-
-.dark-mode #project-icon {
-    content: url('assets/ibikeinfo/dark-icon.png');
-}
+/*dark mode icons */
+body.ibike-page.dark-mode   #project-icon { content: url('assets/ibikeinfo/dark-icon.png'); }
+body.drop2fill-page.dark-mode #project-icon { content: url('assets/drop2fillinfo/drop2fill-icon.png'); }
+body.disney-page.dark-mode #project-icon {
+    content: url('assets/dashboard-icons/disney_ico-dark.png');
+  }
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif; /* You can change the font family */
@@ -985,6 +987,7 @@ header {
       body.drop2fill-page.dark-mode #project-icon {
         content: url('assets/drop2fillinfo/drop2fill-icon.png');
       }
+     
     
  /* Header Styles */
 header#breadcrumbs-header {

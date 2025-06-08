@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prime Video Analytics | Dinesh Madhavan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body class="prime-page">
+  <header id="breadcrumbs-header">
+    <div id="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">
+        <img src="assets/Dinesh.jpg" alt="Dinesh Madhavan" class="breadcrumb-img">
+        Dinesh Madhavan | Portfolio
+      </a>
+      <span> / Prime Video Analytics</span>
+    </div>
+    <button id="theme-toggle" onclick="toggleDarkMode()">
+        <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24">
+            <!-- Sun Icon -->
+            <g id="sun-icon" style="display: none;">
+                <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+                <line x1="12" y1="1" x2="12" y2="3" stroke="white" stroke-width="2"/>
+                <line x1="12" y1="21" x2="12" y2="23" stroke="white" stroke-width="2"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="white" stroke-width="2"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="white" stroke-width="2"/>
+                <line x1="1" y1="12" x2="3" y2="12" stroke="white" stroke-width="2"/>
+                <line x1="21" y1="12" x2="23" y2="12" stroke="white" stroke-width="2"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="white" stroke-width="2"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="white" stroke-width="2"/>
+            </g>
+            <!-- Moon Icon -->
+            <g id="moon-icon" style="display: block;">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-1.1-.18-2.17-.5-3.14-.98 1.21-2.5 2.04-4.3 2.04-2.93 0-5.3-2.37-5.3-5.3 0-1.8.83-3.32 2.04-4.3C14.17 2.18 13.1 2 12 2z" fill="none" stroke="black" stroke-width="2"/>
+            </g>
+        </svg>
+    </button>
+  </header>
+
+  <main>
+    <div class="project-header">
+      <img id="project-icon"
+           src="assets/dashboard-icons/prime_ico.png"
+           alt="Prime Video Icon"
+           class="project-icon">
+      <h1>Prime Video Analytics Dashboard</h1>
+      <div class="tag-container">
+        <span class="tag">Power BI</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Geographic Map</span>
+      </div>
+      <img src="assets/primevideo-dashboard.jpeg"
+           alt="Prime Video Dashboard Screenshot"
+           class="project-image">
+    </div>
+
+    <section class="content-section">
+      <h2>Summary</h2>
+      <p>
+        Analysed Prime Video’s content up to 2021: cleaned country/genre data,
+        standardized ratings, then visualized:
+      </p>
+    </section>
+    <hr class="section-divider">
+
+    <section class="content-section">
+      <h2>Data Transformation</h2>
+      <ul>
+        <li>Filled missing country via distribution analysis → default “USA”.</li>
+        <li>Selected first genre for multi-genre rows.</li>
+        <li>Standardized “RATE_18” / “18+” → “18+”.</li>
+      </ul>
+    </section>
+    <hr class="section-divider">
+
+    <section class="content-section">
+      <h2>Key Visuals</h2>
+      <ul>
+        <li><strong>Genre Bar Chart:</strong> Drama, Action, Comedy breakdown.</li>
+        <li><strong>Map:</strong> Top-producing countries (USA leads).</li>
+        <li><strong>Content Growth Line:</strong> Releases over decades.</li>
+        <li><strong>Ratings Bar Chart:</strong> Audience segmentation.</li>
+      </ul>
+    </section>
+    <hr class="section-divider">
+
+    <section class="content-section">
+      <h2>Explore Live</h2>
+      <p>
+        <a href="PrimeVideo-Dashboard.html" target="_blank">
+          View Prime Video Dashboard →
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <hr class="section-divider">
+    
+  <footer>
+      <div class="footer-container">
+          <br>
+          <div class="social-links">
+              <!-- LinkedIn Icon -->
+              <a href="https://www.linkedin.com/in/dinesh-madhavan/"  id="linkedin-icon" aria-label="LinkedIn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#0077b5">
+                      <path d="M19 0h-14c-1.1 0-2 .9-2 2v20c1.1 0 2-.9 2-2h14c1.1 0 2-.9 2-2v-20c0-1.1-.9-2-2-2zm-11 19h-3v-10h3v10zm-1.5-11.5c-1 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5 .7 1.5 1.5-.7 1.5-1.5 1.5zm10.5 11.5h-3v-5.5c0-1.4-.5-2.5-1.6-2.5-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v6h-3s.1-9 0-10h3v1.4c.4-.7 1.1-1.6 2.7-1.6 1.9 0 3.4 1.3 3.4 4.1v6.1h-.1z"/>
+                  </svg>
+              </a>
+              <!-- GitHub Icon -->
+              <a href="https://github.com/dinesh-madhavan" id="github-icon" aria-label="GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                      <path d="M12 0.3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4 0.6 0.1 0.8-0.3 0.8-0.6v-2.1c-3.3 0.7-4-1.6-4-1.6-0.5-1.3-1.3-1.7-1.3-1.7-1.1-0.7 0.1-0.7 0.1-0.7 1.2 0.1 1.8 1.3 1.8 1.3 1.1 1.8 2.8 1.3 3.5 1 0.1-0.8 0.4-1.3 0.7-1.6-2.6-0.3-5.4-1.3-5.4-5.8 0-1.3 0.5-2.4 1.2-3.2-0.1-0.3-0.5-1.5 0.1-3.2 0 0 1-0.3 3.3 1.3 1-0.3 2-0.4 3-0.4s2 0.1 3 0.4c2.3-1.6 3.3-1.3 3.3-1.3 0.6 1.7 0.2 2.9 0.1 3.2 0.8 0.8 1.2 1.9 1.2 3.2 0 4.5-2.8 5.5-5.4 5.8 0.4 0.3 0.8 1 0.8 2v3c0 0.3 0.2 0.7 0.8 0.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z"/>
+                  </svg>
+              </a>
+              <!-- Dribbble Icon -->
+              <a href="https://dribbble.com/dineshmadhavan" id="dribbble-icon" aria-label="Dribbble">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                      <g id="surface1">
+                      <path style=" stroke:none;fill-rule:nonzero;fill:#ea4c89;fill-opacity:1;" d="M 0 12 C 0 9.824219 0.535156 7.816406 1.609375 5.976562 C 2.679688 4.136719 4.136719 2.679688 5.976562 1.609375 C 7.816406 0.535156 9.824219 0 12 0 C 14.175781 0 16.183594 0.535156 18.023438 1.609375 C 19.863281 2.679688 21.320312 4.136719 22.390625 5.976562 C 23.464844 7.816406 24 9.824219 24 12 C 24 14.175781 23.464844 16.183594 22.390625 18.023438 C 21.320312 19.863281 19.863281 21.320312 18.023438 22.390625 C 16.183594 23.464844 14.175781 24 12 24 C 9.824219 24 7.816406 23.464844 5.976562 22.390625 C 4.136719 21.320312 2.679688 19.863281 1.609375 18.023438 C 0.535156 16.183594 0 14.175781 0 12 Z M 1.992188 12 C 1.992188 14.496094 2.832031 16.695312 4.511719 18.601562 C 5.28125 17.097656 6.496094 15.664062 8.160156 14.304688 C 9.824219 12.945312 11.449219 12.089844 13.03125 11.734375 C 12.792969 11.175781 12.558594 10.671875 12.335938 10.222656 C 9.585938 11.105469 6.609375 11.542969 3.40625 11.542969 C 2.785156 11.542969 2.320312 11.535156 2.015625 11.519531 C 2.015625 11.585938 2.011719 11.664062 2.003906 11.761719 C 1.996094 11.855469 1.992188 11.9375 1.992188 12 Z M 2.304688 9.527344 C 2.65625 9.558594 3.175781 9.574219 3.863281 9.574219 C 6.535156 9.574219 9.070312 9.214844 11.472656 8.496094 C 10.257812 6.335938 8.921875 4.535156 7.464844 3.097656 C 6.199219 3.734375 5.117188 4.625 4.210938 5.761719 C 3.308594 6.894531 2.671875 8.152344 2.304688 9.527344 Z M 5.878906 19.894531 C 7.6875 21.304688 9.726562 22.007812 12 22.007812 C 13.183594 22.007812 14.359375 21.785156 15.527344 21.335938 C 15.207031 18.601562 14.585938 15.953125 13.65625 13.390625 C 12.183594 13.710938 10.699219 14.519531 9.203125 15.816406 C 7.707031 17.113281 6.601562 18.472656 5.878906 19.894531 Z M 9.550781 2.328125 C 10.960938 3.785156 12.265625 5.601562 13.464844 7.777344 C 15.640625 6.863281 17.28125 5.703125 18.382812 4.296875 C 16.527344 2.761719 14.398438 1.992188 12 1.992188 C 11.183594 1.992188 10.367188 2.105469 9.550781 2.328125 Z M 14.328125 9.480469 C 14.566406 9.992188 14.839844 10.640625 15.144531 11.425781 C 16.328125 11.3125 17.617188 11.257812 19.007812 11.257812 C 20 11.257812 20.984375 11.28125 21.960938 11.328125 C 21.832031 9.152344 21.046875 7.214844 19.609375 5.519531 C 18.566406 7.070312 16.808594 8.390625 14.328125 9.480469 Z M 15.742188 13.105469 C 16.558594 15.472656 17.113281 17.902344 17.398438 20.398438 C 18.664062 19.585938 19.695312 18.535156 20.496094 17.257812 C 21.296875 15.976562 21.777344 14.59375 21.9375 13.105469 C 20.769531 13.023438 19.703125 12.984375 18.742188 12.984375 C 17.863281 12.984375 16.863281 13.023438 15.742188 13.105469 Z M 15.742188 13.105469 "/>
+                  </g>
+              </svg>
+              </a>
+              <!-- Behance Icon -->
+          <a href="https://www.behance.net/dinesh_madhavan" id="behance-icon" aria-label="Behance">
+              <svg fill="#0433ff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 510.4 510.4" xml:space="preserve">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g id="SVGRepo_iconCarrier">
+                      <g>
+                          <g>
+                              <path d="M195.2,184.2H188h-48v44h51.6c9.2,0,17.2-2.4,17.2-23.6C208.8,183.4,195.2,184.2,195.2,184.2z"/>
+                          </g>
+                      </g>
+                      <g>
+                          <g>
+                              <path d="M195.2,260.2H140v56h48.4c0.8,0,2,0,3.6,0c8,0,23.2-3.2,23.2-27.2C215.6,260.6,195.2,260.2,195.2,260.2z"/>
+                          </g>
+                      </g>
+                      <g>
+                          <g>
+                              <path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+                                  C504,57,447.2,0.2,377.6,0.2z M296,160.2h84v20h-84V160.2z M256.8,291.8c0,62.4-61.6,64.4-61.6,64.4h-56.8h-1.6H96v-208h40.4h1.6
+                                  h56.8c30.8,0,55.2,17.6,55.2,54.4c0,36.8-29.6,38.8-29.6,38.8C259.6,241,256.8,291.8,256.8,291.8z M407.6,288.2H306.4
+                                  c0,40,34.4,36.8,34.4,36.8c32.4,0,31.2-20.8,31.2-20.8h34.4c0,56-66.8,53.6-66.8,53.6c-80,0-74.8-78.8-74.8-78.8s0-79.2,74.8-79.2
+                                  C418.4,199.4,407.6,288.2,407.6,288.2z"/>
+                          </g>
+                      </g>
+                      <g>
+                          <g>
+                              <path d="M340.4,228.6c-30,0-34.4,31.6-34.4,31.6h64C370,260.2,370.4,228.6,340.4,228.6z"/>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+          </a>
+          </div>
+          <p>&copy; 2024 | Dinesh Madhavan - Made in Melbourne</p>
+      </div>
+  </footer>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
